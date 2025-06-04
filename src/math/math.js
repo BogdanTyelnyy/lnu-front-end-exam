@@ -6,10 +6,10 @@ function checkLenth(str) {
     if(str.length <= LEN)
         return str;
     if(str.includes(".") && Number(str) < 1e10) {
-        const int = str.slice(".")[0];
-
-        if(int.length - 1 <= LEN)
-            return String(Number(str).toFixed(LEN - int.length - 1));
+        const int = str.search(/\./);
+        console.log(int);
+        if(int - 1 <= LEN)
+            return String(Number(str).toFixed(LEN - int - 1));
     }
     return "Infinity";
 }
@@ -43,6 +43,7 @@ function calculate(str) {
             res = val1 ** val2;
             break;
     }
+    console.log(val1, str[i], val2, '=', res);
     return checkLenth(String(res));    
 }
 
@@ -75,7 +76,8 @@ export function update(e, setState, state) {
         setState(prev => prev + target);
     } else if (target === "." && state.length < LEN) {
         setState(prev => {
-            if (prev.includes(target) || prev === "")
+            const operator = prev.search(/[+\-*/^]/) + 1;
+            if (prev.slice(operator).includes(".") || prev.slice(operator) === "")
                 return prev;
             else return prev + target;
         })
@@ -88,7 +90,7 @@ export function update(e, setState, state) {
         } else {
             setState(prev => {
                 const res = calculate(prev);
-                if(res !== "Infinity" && res !== "Error") {
+                if(res !== "Infinity" && res !== "Error" && res.length + 1 < LEN) {
                     return res + target;
                 }
                 return res;
