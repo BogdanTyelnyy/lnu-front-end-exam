@@ -2,6 +2,7 @@ import Picture from "./components/Picture/Picture";
 import Text from "./components/Text/Text";
 import "./clock.css";
 import "./window.css";
+import "./desktop.css";
 export default function App() {
   return (
     <>
@@ -16,6 +17,10 @@ export default function App() {
       <Text>
         COMING SOON
       </Text>
+      <Picture id={"table"} src={"table.svg"} width={320} className={"desktop"}>
+        <Picture id={"laptop"} src={"laptop.svg"} width={150}/>
+        <Picture id={"calculator"} src={"calculator.svg"} width={60}/>
+      </Picture>
     </>
   );  
 }
