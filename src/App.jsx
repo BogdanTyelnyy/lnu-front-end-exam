@@ -1,7 +1,8 @@
 import Picture from "./components/Picture/Picture";
-import "./clock.css";
-import "./window.css";
-import "./desktop.css";
+import "./styles/clock.css";
+import "./styles/window.css";
+import "./styles/desktop.css";
+import "./styles/sign.css";
 export default function App() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function App() {
         <Picture id={"window_ground"} src={"window_ground.svg"} width={200}></Picture>
         <Picture id={"bush"} src={"bush.svg"} width={200}></Picture>
       </Picture>
+      <Picture id={"sign"} src={"sign.svg"} width={200}/>
       <Picture id={"table"} src={"table.svg"} width={320} className={"desktop"}>
         <Picture id={"laptop"} src={"laptop.svg"} width={150}/>
         <Picture id={"calculator"} src={"calculator.svg"} width={60}/>
