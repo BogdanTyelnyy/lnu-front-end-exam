@@ -1,0 +1,18 @@
+.calculator-opened {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calculator-text {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 36px;
+    color: #054905;
+    padding: 10px 15px;
+    text-shadow: 0 0 5px #00ff00;
+}

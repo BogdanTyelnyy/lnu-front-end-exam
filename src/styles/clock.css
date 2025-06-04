@@ -8,7 +8,7 @@
 #arrow {
   position: absolute;
   top: 0px;
-  z-index: 1000;
+  z-index: 100;
   animation: clock linear;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -17,7 +17,7 @@
 #arrow_big {
   position: absolute;
   top: 0px;
-  z-index: 1000;
+  z-index: 100;
   animation: clock linear;
   animation-duration: 40s;
   animation-iteration-count: infinite;

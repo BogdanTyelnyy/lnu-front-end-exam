@@ -13,12 +13,12 @@
     position: absolute;
     top: -90px;
     left: 30px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 #calculator {
     position: absolute;
-    top: -5px;
+    top: 10px;
     left: 200px;
     transform: rotateZ(130deg);
 }
