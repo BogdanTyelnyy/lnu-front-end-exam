@@ -1,8 +1,11 @@
+import Picture from "./components/Picture/Picture";
 
-function App() {
+export default function App() {
   return (
-    <div>Initial Component</div>
+    <>
+      <Picture id={"dial"} src={"dial.svg"} width={100}>
+        <Picture id={"arrow"} src={"arrow.svg"} width={100}/>
+      </Picture>
+    </>
   );
 }
-
-export default App;
