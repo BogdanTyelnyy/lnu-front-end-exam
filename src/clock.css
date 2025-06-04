@@ -1,0 +1,19 @@
+.clock {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#arrow {
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
+  animation: clock linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clock {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}

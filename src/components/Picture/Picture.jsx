@@ -1,7 +1,7 @@
 
-export default function Picture({id, src, width, children}) {
+export default function Picture({id, className, src, width, children}) {
     return(
-        <div>
+        <div className={className}>
             <img id={id} src={src} width={width}/>
             <>{children}</>
         </div>
