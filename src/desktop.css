@@ -1,8 +1,12 @@
 .desktop {
     position: absolute;
-    top: 115%;
+    top: 130%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#table {
+    transform: translateY(15px);
 }
 
 #laptop {
