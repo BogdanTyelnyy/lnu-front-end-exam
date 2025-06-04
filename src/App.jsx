@@ -1,4 +1,5 @@
 import Picture from "./components/Picture/Picture";
+import Text from "./components/Text/Text";
 import "./clock.css";
 import "./window.css";
 export default function App() {
@@ -12,6 +13,9 @@ export default function App() {
         <Picture id={"window_ground"} src={"window_ground.svg"} width={200}></Picture>
         <Picture id={"bush"} src={"bush.svg"} width={200}></Picture>
       </Picture>
+      <Text>
+        COMING SOON
+      </Text>
     </>
   );  
 }
