@@ -1,0 +1,29 @@
+.outside {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+#window {
+    position: relative;
+    z-index: 1000;
+}
+
+#window_ground {
+    position: absolute;
+    top: 0px;
+}
+
+#bush {
+    position: absolute;
+    top: 0px;
+    animation: wind linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wind {
+    0% {transform: scaleX(1);}
+    50% {transform: scaleX(0.93);}
+    100% {transform: scaleX(1);}
+}
